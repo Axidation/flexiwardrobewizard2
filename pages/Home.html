@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Its own CSS File, Page Specific -->
+<link rel="stylesheet" href="../assets/styles/home.css">
+
+<body>
+
+  <div class="container">
+    <div class="row">
+
+
+      <div class="col align-middle images">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TEi5wA-2B2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+
+      <div class="col align-middle headings">
+        <h1><b>Try Out Our New Wardrobe Wizard!</b></h1><br>
+        <h4>Build an affordable custom wardrobe for your space.</h4>
+        <h5><em>It's easier than ever before!</em></h5>
+        <a class="btn btn-primary" id="WardrobeWizardLink" href="#" role="button">Wardrobe Wizard</a>
+        <a class="btn btn-primary" id="DoorsLink" href="#" role="button">Doors</a>
+      </div>
+
+
+    </div>
+  </div>
+  <script>
+    $('#WardrobeWizardLink').on('click', () => {
+      $('.content').load(`/pages/Wardrobe-Wizard.html`,( response, status, xhr ) => {
+        if ( status == "error" ) {
+          Error(xhr);
+        }
+      });
+    });
+
+    $('#DoorsLink').on('click', () => {
+      $('.content').load(`/pages/Doors.html`,( response, status, xhr ) => {
+        if ( status == "error" ) {
+          Error(xhr);
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

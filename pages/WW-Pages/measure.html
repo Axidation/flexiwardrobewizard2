@@ -1,0 +1,59 @@
+    <h1>Add Measurements</h1>
+    <h2 class="h2note">Note: Only enter measurements if they apply</h2>
+    <div class="measure-wrapper">
+        <div class="heightwrap"><div class="head-text">Height (H)</div><input id="Mheight" class="length-input" placeholder="in mm" type="number" min="0"></div>
+        <div class="top-text">Back Width (A)</div><input id="back-width" class="length-input" placeholder="in mm" type="number" min="0">
+        <div class="imagewrap">
+          <div class="inputwrapper"><div class="left-text LeftWall">Left Wall (B)</div><input id="left-wall" class="length-input LeftWall" placeholder="in mm" type="number" min="0"></div>
+          <img id="Measure-IMG" src="../../assets/images/wizard/width/Dimension.jpg" class="example-image">
+          <div class="inputwrapper"><div class="right-text RightWall">Right Wall (C)</div><input id="right-wall" class="length-input RightWall" placeholder="in mm" type="number" min="0"></div>
+        </div>
+
+        <div class="belowimage">
+            <div class="inputwrapper">
+                <div class="bottom-left-text LeftNibs">Left Nib (D)</div>
+                <input id="left-nib" class="length-input LeftNibs" placeholder="in mm" type="number" min="0">
+            </div>
+            <div class="inputwrapper">
+                <div class="bottom-left-text WardrobeWidth">Wardrobe Width (C)</div>
+                <input id="wardrobe-width" class="length-input WardrobeWidth" placeholder="in mm" type="number" min="0">
+            </div>
+            <div class="inputwrapper">
+                <div class="bottom-right-text RightNibs">Right Nib (E)</div>
+                <input id="right-nib" class="length-input RightNibs" placeholder="in mm" type="number" min="0">
+            </div>
+        </div>
+    </div>
+
+    <div class="container breakout-container checkMeasure" style="margin-bottom: 20px;">
+        <div class="row">
+            <div class="col">
+                <div class="sect measuresect">
+                    <p class="mTitle">Check Measurements</p>
+                    <p class="desc">For a fee of $120 our professional installer will check your measurements. Select
+                        the box to include this service.
+                        Incorrect measurements will incur extra costs.
+                    </p>
+                    <br>
+                    <div class="form-check">
+                        <input class="radioButton" type="radio" name="measureRadio" id="checkMeasurementsRadio"
+                            value="checkMeasurements">
+                        <label class="form-check-label" for="checkMeasurementsRadio">
+                            Yes, I would like to have my measurements professionally checked.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="radioButton" type="radio" name="measureRadio" id="dontCheckMeasurementsRadio"
+                            value="dontCheckMeasurements" checked>
+                        <label class="form-check-label" for="dontCheckMeasurementsRadio">
+                            No, I would not like to have my measurements professionally checked.
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../assets/scripts/measure.js"></script>

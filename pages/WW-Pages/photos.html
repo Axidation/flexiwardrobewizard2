@@ -1,0 +1,73 @@
+<h1>Upload existing photos</h1>
+<div>
+    <div class="container upload-image">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Please upload a photo of where the wardrobe is going to be installed. If you
+                    have chosen to use our breakout service, please upload a photo of the existing wardrobe that is
+                    going to be taken out.</p>
+            </div>
+            <div class="col-md-12"><input name="userImage" id="userImage" type="file" class="btn btn-primary inputFile"
+                    onChange="showPreview(this);" /></div>
+
+        </div>
+        <div class="row">
+            <div id="targetLayer" class="col-md-4">
+                <img src="" id="upload-preview">
+            </div>
+            <div id="Link" class="col-md-4"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function showPreview(objFileInput) {
+
+        if (objFileInput.files[0]) {
+            // Reject big files
+            if (objFileInput.files[0].size > 2048000) {
+                alert("Please select a smaller file");
+                return false;
+            }
+            var fileReader = new FileReader();
+            fileReader.onload = function (e) {
+
+                $("#upload-preview").attr('src', e.target.result);
+                // Replace ctrlq with your own API key
+                var apiUrl = 'https://api.imgur.com/3/image';
+                var apiKey = 'bc6030a12a15b7a';
+
+                var settings = {
+                    async: false,
+                    crossDomain: true,
+                    processData: false,
+                    contentType: false,
+                    type: 'POST',
+                    url: apiUrl,
+                    headers: {
+                        Authorization: 'Client-ID ' + apiKey,
+                        Accept: 'application/json'
+                    },
+                    mimeType: 'multipart/form-data',
+                    dataType: "json"
+                };
+
+                var formData = new FormData();
+                formData.append("image", objFileInput.files[0]);
+                settings.data = formData;
+
+                // Response contains stringified JSON
+                $.ajax(settings).done((res) => {
+                    UserPic = res.data.link;
+                    // create an invisible element that gets saved
+                    $('#targetLayer').append(`<p id =${UserPic}></p>`)
+                    console.log(UserPic);
+                });
+
+
+            }
+            fileReader.readAsDataURL(objFileInput.files[0]);
+        }
+
+    }
+</script>

@@ -1,0 +1,52 @@
+body {
+  color: #0077c8;
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-weight: bolder;
+  text-align: center;
+  font-size: 200% !important;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 125%;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+a:hover, a {
+  color: #0077c8;
+  text-decoration: none;
+}
+
+.accessories-container {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.accessorySelect {
+  background-color: #BCE0FD;
+  height: 400px;
+  width: 330px;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+}
+
+.accessoryImage {
+  width: 100%;
+}
+
+.accessoryName {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+  padding-top: 22px;
+}
+
+.bottom {
+  margin-bottom: 100px;
+}

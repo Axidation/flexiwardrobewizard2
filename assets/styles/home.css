@@ -1,0 +1,42 @@
+.landing-video {
+  background-color: #0077c88e;
+}
+
+.images {
+  margin-top: 25%;
+}
+
+.images img {
+  width: inherit;
+}
+
+.headings {
+  color: #0077c8;
+  margin-top: 25%;
+}
+
+@media screen and (max-width: 500px) {
+  .container .headings {
+    margin-top: 15%;
+  }
+  .container .images {
+    margin-top: 5%;
+    margin-left: inherit;
+  }
+  .container .images img {
+    width: inherit;
+  }
+}
+
+.container {
+  margin-top: auto;
+}
+
+.container .btn {
+  margin-bottom: 15%;
+  margin-top: 2%;
+}
+
+.container h1 {
+  margin-bottom: -2%;
+}

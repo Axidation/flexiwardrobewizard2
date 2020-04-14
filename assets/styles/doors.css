@@ -1,0 +1,100 @@
+@media (min-device-aspect-ratio: 1 / 1) {
+  .section-options {
+    text-align: start;
+    min-width: 400px;
+    width: 30%;
+  }
+  .section-options button {
+    width: 150px;
+    height: 50px;
+  }
+}
+
+body {
+  color: #0077c8;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-weight: bolder;
+  text-align: center;
+  font-size: 200% !important;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 125%;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.Dtype-wrapper {
+  background-color: #0077c8;
+  padding: 8px 0 8px 0;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.Dtype-wrapper .Dtype-option-wrapper {
+  margin-left: 5%;
+  display: inline-block;
+}
+
+.Dtype-wrapper .Dtype-option-wrapper input[type="radio"] {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.Dtype-wrapper .Dtype-option-wrapper a {
+  text-align: center;
+  margin-left: 10px;
+  width: 90px;
+  padding: 5px 0px 5px 0px;
+  border-radius: 5px;
+}
+
+.section-options {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: start;
+  margin: auto;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-color: #0077c8;
+}
+
+.section-options button {
+  width: 30%;
+}
+
+.Dmeasure-text {
+  display: block;
+  padding-top: 20px;
+  color: #0077c8;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.length-input {
+  border: solid #D3EBFD 1.5px;
+  padding: 13px;
+}
+
+.Dmeasure-wrapper {
+  display: inline-table;
+  width: 40%;
+}
+
+.measure-wrapper {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto 40px auto;
+}
+
+button {
+  float: none;
+  margin-bottom: 30px;
+}

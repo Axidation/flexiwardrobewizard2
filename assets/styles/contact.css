@@ -1,0 +1,15 @@
+h1 {
+  font-family: 'Open Sans';
+  font-weight: bolder;
+  text-align: center;
+  font-size: 200% !important;
+  color: #0077c8;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+label {
+  font-family: 'Open Sans';
+  font-weight: bolder;
+  color: #0077c8;
+}

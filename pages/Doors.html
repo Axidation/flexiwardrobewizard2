@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../assets/styles/wizard.css">
+    <link rel="stylesheet" href="../assets/styles/doors.css">
+</head>
+<body>
+  <h1>Aluminium Doors</h1>
+  <h2>This section is for doors only, if you are looking for internals please visit our wardrobe wizard.</h2>
+  <div class="measure-wrapper">
+      <div class="Dmeasure-wrapper"><div class="Dmeasure-text">Frame Height</div><input id="Dheight" class="length-input" placeholder="in mm" type="number" min="0"></div>
+      <div class="Dmeasure-wrapper"><div class="Dmeasure-text">Frame Width</div><input id="Dwidth" class="length-input" placeholder="in mm" type="number" min="0"></div>
+  </div>
+  <div class="Dtype-wrapper">
+    <div class="Dtype-option-wrapper">
+      <input name="Dcolour" type="radio"></input>
+      <a style="background-color: lightgray; color: black;">Mirror</a>
+    </div>
+    <div class="Dtype-option-wrapper">
+      <input name="Dcolour" type="radio"></input>
+      <a style="background-color: #f0fcf0; color: black;">White</a>
+    </div>
+    <div class="Dtype-option-wrapper">
+      <input name="Dcolour" type="radio"></input>
+      <a style="background-color: #ff3838;">Red</a>
+    </div>
+    <div class="Dtype-option-wrapper">
+      <input name="Dcolour" type="radio"></input>
+      <a style="background-color: #000000;">Black</a>
+    </div>
+    <div class="Dtype-option-wrapper">
+      <input name="Dcolour" type="radio"></input>
+      <a style="background-color: #ffffff; color: black;">Superwhite</a>
+    </div>
+  </div>
+  <div class="section-options-container">
+    <div id="doors-section-options__one" class="section-options">
+      <img src="assets\images\wizard\Doors\Slimline.jpg">
+      <a>
+        <h2>Slimline ($XXX)</h2>
+        <p>Narrow tracks/frame.</p>
+      </a>
+      <button value="slimline-door" class="door-btn" id="select-button-slimline">Select</button>
+    </div>
+
+    <div id="section-options__two" class="section-options">
+      <img src="assets\images\wizard\Doors\Softline.jpg">
+      <a>
+        <h2>Softline ($XXX)</h2>
+        <p>A standard track/frame.</p>
+      </a>
+      <button value="soft-close-door"  class="door-btn" id="select-button-soft-close">Select</button>
+    </div>
+  </div>
+  <button type="button" class="btn btn-primary">
+    ADD TO CART
+  </button>
+</body>
+<script src="../assets/scripts/doors.js"></script>

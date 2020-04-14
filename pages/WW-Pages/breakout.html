@@ -1,0 +1,91 @@
+<h1>Breakout</h1>
+<div class="container breakout-container">
+    <div class="row">
+        <div class="col">
+            <div class="sect">
+                <p>Would you like us to remove your existing wardrobe?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="breakoutRadio" id="EmptySpaceRadio" value="EmptySpace" checked>
+                    <label class="form-check-label" for="EmptySpaceRadio">
+                        No, this wardrobe is being installed in an empty space.
+                    </label>
+                </div>
+            </div>
+            <div class="sect">
+                <p>Yes, I need an existing wardrobe removed AND</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="breakoutRadio" id="ShelvingAndRodsRadio" 
+                        value="ShelvingAndRods">
+                    <label class="form-check-label" for="ShelvingAndRodsRadio">
+                        I have Shelving and rods only (Free removal)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="breakoutRadio" id="ShelvingWithDoorsRadio"
+                        value="ShelvingWithDoors">
+                    <label class="form-check-label" for="ShelvingWithDoorsRadio">
+                        Shelving and rods with doors ($100 extra)
+                    </label>
+                </div>
+            </div>
+
+            <br>
+            <p class="desc">We will patch the area after removal of the old wadrobe and before installation of the new
+                wardrobe. We
+                do not paint the area because that would mean we meant install the new wardrobe. Read the T&C's below to
+                find out more about our breakout serivce</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#TermsConditions">
+                Terms & Conditions
+            </button>
+
+        </div>
+
+        <div class="col video-border">
+            <p>Video goes here</p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="TermsConditions" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="ModalTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalTitle">By clicking <strong>CONTINUE</strong> you agree that:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>I have read, understand, and agree to Flexi's standard terms and conditions.</li>
+                    <li>I understand that by providing my own dimensions, Flexi will not be liable for any mismeasurements
+                        and should parts need to be replaced as a result of this, additional costs may apply.</li>
+                    <li>I understand that all dimensions listed on the layout options are estimates only and may be subject
+                        to change at the discretion of Flexi.</li>
+                    <li>I understand that should I wish to change any part of my order after placing it, additional costs may
+                        apply.</li>
+                    <li>I understand that Flexi will contact me in 2-5 business days to arrange an installation date. The
+                        installation date may be between 2 & 4 weeks.</li>
+                    <li>I understand that all colours displayed are indicative only, and that although Flexi have done their
+                        best to provide an accurate representation, they shall not be liable for any misinterpretations of
+                        colours as every monitor will have variations in the display of colours. For peace of mind, please feel
+                        free to visit one of our showrooms to view the colours in person. The locations can be found here.</li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    .video-border {
+        border: 5px solid blue;
+    }
+</style>

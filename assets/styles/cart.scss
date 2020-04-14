@@ -1,0 +1,205 @@
+@import"base/global";
+
+body {
+    color:$accent;
+    height:1080px;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "Add-section Product-list Quantity" "Add-section Product-list Quantity" "Add-section Product-list Quantity" ". . Quantity";
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+  }
+  
+  .Add-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Add-Wardrobes" "Add-Doors" "Add-Accessories";
+    grid-area: Add-section;
+  }
+  
+  .Add-Wardrobes { grid-area: Add-Wardrobes; }
+  
+  .Add-Accessories { grid-area: Add-Accessories; }
+  
+  .Add-Doors { grid-area: Add-Doors; }
+  
+  .Quantity {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "Quant Price" "Quant Price" "Quant Price" "Checkout Checkout";
+    grid-area: Quantity;
+  }
+  
+  .Quant { grid-area: Quant; }
+  
+  .Price { grid-area: Price; }
+  
+  .Checkout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Total . Price-Total" "proceed-button proceed-button proceed-button";
+    grid-area: Checkout;
+  }
+  
+  .Price-Total { grid-area: Price-Total; }
+  
+  .Total { grid-area: Total; }
+  
+  .proceed-button { grid-area: proceed-button; }
+  
+  .Product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Product-List Description";
+    grid-area: Product-list;
+  }
+  
+  .Product-List { grid-area: Product-List; }
+  
+  .Description { grid-area: Description; }
+
+.btn-primary {
+    width:350px;
+    font-size:20px;
+    height:50px;
+    line-height:30px;
+}
+
+.Product-list {
+    margin-top:124px;
+    height:768px;
+}
+
+.Add-section {
+    padding:20px;
+    margin-top:124px;
+    text-align:center;
+    height:768px;
+}
+
+.Add-button {
+    margin-top:70px;
+}
+
+.doors-container {
+    text-align:center;
+    margin-top:70px;
+}
+
+.doorSelect {
+    background-color:#BCE0FD;
+    height:200px;
+    width:165px;
+    text-align:center;
+    display:block;
+    margin:10px;
+    margin-bottom:50px;
+}
+
+.doorImage {
+    height:165px;
+    background-color:#F0F9FF;
+}
+
+.doorName {
+    font-size:15px;
+    margin:0;
+    font-weight:500;
+    padding-top:6px;
+}
+
+.bottom {
+    margin-bottom:70px;
+}
+
+h4 {
+    display:inline;
+    font-weight:700px;
+    padding-right:10px;
+}
+
+.Description {
+    margin-bottom:50px
+}
+
+.desc {
+    margin-top:70px;
+}
+
+.name-input {
+    border:solid #D3EBFD 1.5px;
+    padding:7px;
+}
+
+.Quantity {
+    margin-top:98px;
+    padding-left:10%;
+    height:768px;
+
+    input {
+        width:63px;
+        border:solid #D3EBFD 1.5px;
+        padding:7px;
+    }
+}
+
+.quantDiv {
+    margin-top:70px;
+
+    h4 {
+        display:block;
+        font-size:18px;
+    }
+}
+
+.pricetag {
+    color:#3C9FD5;
+}
+
+.proceed-button {
+    padding-bottom:50px;
+}
+
+.Checkout {
+    padding-top: 500px;
+}
+
+.Total {
+    height:100px;
+
+    h4 {
+        margin-top:30px;
+        display:block;
+    }
+}
+
+.Price-Total {
+    height:100px;
+
+    h4 {
+        margin-top:30px;
+        display:block;
+    }
+}
+
+.row {
+    width:100% !important;
+}
+
+.col-lg-9 {
+    width:400px;
+    margin-left:70%;
+    margin-bottom:10%;
+    h4 {
+        margin-top:0;
+    }
+}

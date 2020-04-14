@@ -1,0 +1,53 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-transition: ease-in-out 0.15s;
+  transition: ease-in-out 0.15s;
+  text-align: center;
+}
+
+.nav-link:hover {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #ececec;
+  border-radius: 3px;
+  background-color: #0077c8;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-top: -3%;
+  }
+  .row {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+}
+
+.navbar {
+  background-color: #0077c8;
+}
+
+.fixed-bottom {
+  background-color: #0077c8;
+}
+
+i {
+  color: white;
+}

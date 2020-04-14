@@ -1,0 +1,52 @@
+@import "base/global";
+
+.landing-video {
+    background-color: $accent-trans;
+}
+
+.images {
+    margin-top: 25%;
+
+
+    img {
+        width: inherit;
+    }
+}
+
+.headings {
+    color: $accent;
+    margin-top: 25%;
+}
+
+@media screen and (max-width: 500px) {
+
+    .container {
+
+        .headings {
+            margin-top: 15%;
+        }
+
+        .images {
+            margin-top: 5%;
+            margin-left: inherit;
+
+            img {
+                width: inherit;
+            }
+        }
+    }
+
+}
+
+.container {
+    margin-top: auto;
+
+    .btn {
+        margin-bottom: 15%;
+        margin-top: 2%;
+    }
+
+    h1 {
+        margin-bottom: -2%;
+    }
+}

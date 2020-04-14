@@ -1,0 +1,272 @@
+body {
+  color: #0077c8;
+  height: 1080px;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "Add-section Product-list Quantity" "Add-section Product-list Quantity" "Add-section Product-list Quantity" ". . Quantity";
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+
+.Add-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "Add-Wardrobes" "Add-Doors" "Add-Accessories";
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: Add-section;
+}
+
+.Add-Wardrobes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Add-Wardrobes;
+}
+
+.Add-Accessories {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: Add-Accessories;
+}
+
+.Add-Doors {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Add-Doors;
+}
+
+.Quantity {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "Quant Price" "Quant Price" "Quant Price" "Checkout Checkout";
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 3;
+  grid-area: Quantity;
+}
+
+.Quant {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: Quant;
+}
+
+.Price {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: Price;
+}
+
+.Checkout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "Total . Price-Total" "proceed-button proceed-button proceed-button";
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Checkout;
+}
+
+.Price-Total {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: Price-Total;
+}
+
+.Total {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Total;
+}
+
+.proceed-button {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: proceed-button;
+}
+
+.Product-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "Product-List Description";
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: Product-list;
+}
+
+.Product-List {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Product-List;
+}
+
+.Description {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: Description;
+}
+
+.btn-primary {
+  width: 350px;
+  font-size: 20px;
+  height: 50px;
+  line-height: 30px;
+}
+
+.Product-list {
+  margin-top: 124px;
+  height: 768px;
+}
+
+.Add-section {
+  padding: 20px;
+  margin-top: 124px;
+  text-align: center;
+  height: 768px;
+}
+
+.Add-button {
+  margin-top: 70px;
+}
+
+.doors-container {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.doorSelect {
+  background-color: #BCE0FD;
+  height: 200px;
+  width: 165px;
+  text-align: center;
+  display: block;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
+.doorImage {
+  height: 165px;
+  background-color: #F0F9FF;
+}
+
+.doorName {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 500;
+  padding-top: 6px;
+}
+
+.bottom {
+  margin-bottom: 70px;
+}
+
+h4 {
+  display: inline;
+  font-weight: 700px;
+  padding-right: 10px;
+}
+
+.Description {
+  margin-bottom: 50px;
+}
+
+.desc {
+  margin-top: 70px;
+}
+
+.name-input {
+  border: solid #D3EBFD 1.5px;
+  padding: 7px;
+}
+
+.Quantity {
+  margin-top: 98px;
+  padding-left: 10%;
+  height: 768px;
+}
+
+.Quantity input {
+  width: 63px;
+  border: solid #D3EBFD 1.5px;
+  padding: 7px;
+}
+
+.quantDiv {
+  margin-top: 70px;
+}
+
+.quantDiv h4 {
+  display: block;
+  font-size: 18px;
+}
+
+.pricetag {
+  color: #3C9FD5;
+}
+
+.proceed-button {
+  padding-bottom: 50px;
+}
+
+.Checkout {
+  padding-top: 500px;
+}
+
+.Total {
+  height: 100px;
+}
+
+.Total h4 {
+  margin-top: 30px;
+  display: block;
+}
+
+.Price-Total {
+  height: 100px;
+}
+
+.Price-Total h4 {
+  margin-top: 30px;
+  display: block;
+}
+
+.row {
+  width: 100% !important;
+}
+
+.col-lg-9 {
+  width: 400px;
+  margin-left: 70%;
+  margin-bottom: 10%;
+}
+
+.col-lg-9 h4 {
+  margin-top: 0;
+}
